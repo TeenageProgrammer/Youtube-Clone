@@ -1,0 +1,176 @@
+header{
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+}
+
+.headerDiv{
+    margin: 0;
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    font-family: 'Roboto';
+    font-weight: 400;
+    width: 100%;
+    height: 58px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-main);
+}
+
+.headerDiv div{
+    display: flex;
+    align-items: center;
+}
+
+.headerDiv div:nth-child(1) img{
+    cursor: pointer;
+    padding: 0 16px;
+    height: 20px;
+}
+
+
+.humburger{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.humburger div{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.humburger:hover{
+    background-color: var(--secondary-light-color);
+}
+
+.humburger div span{
+    width: 17.5px;
+    height: 1px;
+    background-color: var(--text-main);
+}
+
+.humburger div span:nth-child(2){
+    margin: 5px 0;
+}
+
+
+.searchContainer{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    position: relative;
+    min-width: 650px;
+}
+
+.searchBox{
+    width: 100%;
+    position: relative;
+}
+
+.searchBox input{
+    outline: none;
+    border: 1px solid var(--secondary-light-color);
+    background-color: var(--primary-color);
+    color: var(--text-main);
+    font-size: 16px;
+    padding: 9px 6px;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.searchBox span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.searchBtn{
+    background-color: var(--secondary-light-color);
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    cursor: pointer;
+}
+
+.searchMic{
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+.headerDiv div:nth-child(3) img{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.profileContainer span{
+    margin-right: 25px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.profileBtns{
+    position: absolute;
+    top: 60px;
+    padding:  10px 0;
+    box-sizing: border-box;
+    right: 20px;
+    background-color: var(--secondary-color);
+    color: var(--text-main);
+    font-family: 'Roboto';
+}
+
+.avatarInfo{
+    padding: 4px 10px;
+    display: flex;
+}
+
+.avatarInfo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.horizontalLine{
+    width: 100%;
+    background-color: var(--hover-text-color);
+    height: 1px;
+    margin: 8px 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+.profileTab{
+    display: flex;
+    align-items: center;
+    padding: 7px 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.profileTab:hover{
+    background-color: var(--secondary-light-color);
+
+}
+
+.profileTab span{
+    font-size: 30px;
+}
+
+.profileTab p{
+    margin: 0;
+    font-size: 15px;
+    margin-left: 15px;
+}
+

@@ -1,0 +1,74 @@
+.videoBox{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    max-width: 360px;
+}
+
+.videoThumbnail{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoInfo{
+    display: flex;
+    margin-top: 10px;
+}
+
+.videoInfo div{
+    margin-left: 8px;
+}
+
+.videoInfo div h2{
+    font-weight: 400;
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.videoInfo div h3{
+    font-weight: 400;
+    color: var(--text-light-main);
+    font-size: 13px;
+    margin: 8px 0 4px 0;
+    align-items: center;
+}
+
+.videoInfo div h3:hover{
+    color: var(--text-main);
+}
+
+.videoInfo div h3 span{
+    font-size: 12px;
+    color: var(--text-light-main);
+}
+
+.videoInfo div p{
+    font-size: 12px;
+    color: var(--text-light-main);
+    margin: 0;
+}
+
+.video_channel{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.thumbnailInfo{
+    position: relative;
+    width: 100%;
+}
+
+.thumbnailInfo p{
+    position: absolute;
+    bottom: 6px;
+    right: 3px;
+    font-size: 12px;
+    padding: 2px 6px;
+    background-color: #000000dc;
+    margin: 0;
+    font-weight: 500;
+    border-radius: 3px;
+}

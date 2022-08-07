@@ -1,0 +1,216 @@
+.sideBarTabs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 10px 12px 0 12px;
+    border-bottom: 5px solid transparent;
+    border-right: 4px solid transparent;
+    width: 240px;
+    height: calc(100vh - 58px);
+    font-family: 'Roboto';
+    color: var(--text-main);
+    background-color: var(--secondary-color);
+    overflow: auto;
+    margin-top: 58px;
+    z-index: 8;
+}
+
+.sidebarContainer{
+    overflow: auto;
+}
+
+.sideBarTabs::-webkit-scrollbar{
+    width: 8.5px;
+}
+
+.sideBarTabs::-webkit-scrollbar-track{
+    background-color: var(--secondary-color);
+}
+
+.sideBarTabs::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: var(--main-secondary-light);
+}
+
+.tabContainer{
+    width: 100%;
+}
+
+.sidebarTab{
+    display: flex;
+    justify-content: flex-start;
+    padding: 6px 12px;
+    border-radius: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sidebarTab.active{
+    background-color: var(--secondary-light-color);
+}
+
+.sidebarTab.active span{
+    font-variation-settings: 
+    'FILL' 1;
+}
+
+.sidebarTab:hover{
+    background-color: var(--secondary-light-color);
+}
+
+.sidebarTab span{
+    font-size: 28px;
+    margin-right: 18px;
+}
+
+
+.mainSidebarHead{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+}
+
+.channelTab{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.channelTab:hover{
+    background-color: var(--secondary-light-color);
+}
+
+.channelTab img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.channelTab p{
+    margin: 0;
+    color: var(--text-main);
+    font-size: 15px;
+}
+
+.youtubeTabs{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.youtubeTabs img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+
+.youtubeTabs p{
+    margin: 0;
+    font-size: 15px;
+}
+
+.youtubeTabs:hover{
+    background-color: var(--secondary-light-color);
+}
+
+.sidebarBottomLinks{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.sidebarBottomLinks a{
+    color: var(--text-light-main);
+    text-decoration: none;
+    margin-right: 8px;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.sidebarBottomLinks h3{
+    font-weight: 400;
+}
+
+
+.miniSidebar{
+    background-color: var(--secondary-color);
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    padding: 60px 5px 0 5px;
+}
+
+.miniSidebarTab{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px 0;
+    flex-direction: column;
+    color: var(--text-main);
+    cursor: pointer;
+    font-family: 'Roboto';
+}
+
+.miniSidebarTab span{
+    font-size: 28px;
+}
+
+
+.miniSidebarTab.active span{
+    font-variation-settings: 
+    'FILL' 1;
+}
+
+.miniSidebarTab:hover{
+    background-color: var(--secondary-light-color);
+}
+
+.miniSidebarTab p{
+    margin: 0;
+    margin-top: 6px;
+    font-size: 11px;
+}
+
+.sidebarSection.close{
+    width: 10px;
+}
+
+#miniSidebar{
+    display: none;
+}
+
+.sidebarSection.close #miniSidebar{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebarSection.close #sidebarContainer{
+    display: none;
+}
+
+
